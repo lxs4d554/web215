@@ -1,0 +1,374 @@
+// Lisa Sileo, 8/30/2013 - JavaScript Console Play
+   
+   
+//Ex 1 
+   dog = function(){ 
+..   var name="Alex"; 
+..   console.log(name); 
+..   };
+=> [Function]
+
+//Ex 2
+   dog();
+Alex
+
+//Ex 3
+   name;
+=> ''
+   console.log(name);
+
+//Ex 2 
+   cat = function(){ 
+..   name = "Cleo"; 
+..   console.log(name); 
+..   };
+=> [Function]
+
+// Ex 4
+   name;
+=> 'Cleo'
+
+//Ex 5      
+     newCat="Scratchy";
+=> 'Scratchy'
+   changeName = function(){ 
+..   newCat="Boy"; 
+..   }
+=> [Function]
+   newCat;
+=> 'Scratchy'
+   changeName();
+   newCat;
+=> 'Boy'
+  
+//Ex 6
+   typeOf(name);
+ReferenceError: typeOf is not defined //I think it's typeOf in Java.
+
+//Ex 7
+   typeof(name1);
+=> 'string'
+
+//Ex 8
+   typeof(newCat);
+=> 'function'
+   
+//EX 9 
+   var book = 1984;
+   book;
+=> 1984
+   typeof(book);
+=> 'number'
+
+//Ex 10
+   book.toString();
+=> '1984'
+   typeof(book);
+=> 'number'
+
+//Ex 11
+   string(book);
+ReferenceError: string is not defined
+   String(book);
+=> '1984'
+
+//Ex 12 casting doesn't make a permanent change.
+   typeof(book);
+=> 'number'
+   book;
+=> 1984
+   
+//Ex 13   
+   String(book) + 1;
+=> '19841'
+   book + 1;
+=> 1985
+
+//Ex 14 
+   var song = "22";
+   song
+=> '22'
+   var age = song + 21;
+   age;
+=> '2221'
+
+//Ex 15
+   var age = Number(song) + 21;
+   age
+=> 43
+   
+
+//Ex 16   
+   typeof(song);
+=> 'string'
+   parseInt(song);
+=> 22
+
+//Ex 17
+   parseFloat(song);
+=> 22
+
+//Ex 18
+   var addDecimal = parseFloat(song).toFixed(2);
+   addDecimal;
+=> '22.00'
+
+// Ex 19
+   1 + 7 % 2
+=> 2
+
+// Ex 20
+   7 % 2 + 1
+=> 2
+
+// Ex 21
+   2 % 7
+=> 2
+   3 % 7
+=> 3
+   4 % 7
+=> 4
+   5 % 7
+=> 5
+   7 % 7
+=> 0
+
+// Ex 22
+   Math.floor(6.45);
+=> 6
+
+// Ex 23
+   Math.abs(6);
+=> 6
+
+// Ex 24
+   Math.abs(-6);
+=> 6
+
+// Ex 25
+   Math.abs(6) + Math.abs(-6);
+=> 12
+
+//Ex 26
+   anArray = [6,7,8,12,20];
+=> [ 6, 7, 8, 12, 20 ]
+
+// Ex 27
+     Math.max(anArray);
+=> NaN
+
+// Ex 28
+     Array.max(anArray);
+TypeError: Array.max is not a function
+
+// Ex 29
+      anArray.max();
+TypeError: anArray.max is not a function
+
+// Ex 30 
+  value = anArray[0];
+=> 6
+   for (i = 1; i < anArray.length; i++){ 
+..   if (anArray[i]>value){ 
+..     value=anArray[i]; 
+..     console.log(value); 
+..     } 
+..     };
+7
+8
+12
+20
+
+// Ex 31
+   for (i = 1; i < anArray.length; i++){ 
+..   if (anArray[i]>value){ 
+..     value=anArray[i]; 
+..     } 
+..     console.log(value); 
+..     }
+20
+20
+20
+20
+
+// Ex 32
+   for (i = 1; i < anArray.length; i++){ 
+..   if (anArray[i]>value){ 
+..     value=anArray[i]; 
+..     }} 
+..     console.log(value);
+20
+   
+// Ex 33
+  var fullName = prompt("Enter your first and last name");
+   fullName;
+=> 'Lisa Sileo'
+   
+// Ex 34
+   var name = "";
+   for(i=0; i<fullName.length; i++){ 
+..   name+=fullName[i]; 
+..   }
+=> 'Lisa Sileo'
+   name;
+=> 'Lisa Sileo'
+
+// Ex 35
+  firstName="";
+=> ''
+   for(for i=0; i<fullName.length; i++){ 
+..   if (fullName[i]==" "){ 
+..     break; 
+..     firstName+=fullName[i];}  
+..     }; 
+..     console.log(firstName); 
+..     
+SyntaxError: syntax error
+
+// Ex 36
+   for(for i=0; i<fullName.length; i++){ 
+..   if (fullName[i]==" "){ 
+..     break; 
+..     firstName+=fullName[i];  
+..     }}; 
+..     console.log(firstName); 
+..     
+SyntaxError: syntax error
+   
+// Ex 37   
+   fullName;
+=> 'Lisa Sileo'
+   firstName;
+=> ''
+   
+   for(var i=0; i<fullName.length; i++){ 
+..   if (fullName[i]==" "){ 
+..     break; 
+..     }else{ 
+..       firstName+=fullName[i]; 
+..       } 
+..       }
+=> 'Lisa'
+   firstName;
+=> 'Lisa'
+
+//Ex 38
+  fullName.length
+=> 10
+
+// Ex 39
+  var x=5;
+   var y=3;
+   
+   if (x+y > 10){ 
+..   console.log("x+y is greater than 10"); 
+..   }
+
+// Ex 40   
+     if (x+y>10){ 
+..   console.log("The sum of the two numbers is greater than 10") 
+..   }else{ 
+..     console.log("The sum of the two numbers is less than 10"); 
+..     }
+The sum of the two numbers is less than 10
+
+// Ex 41   
+   addNumbers = function(x,y){ 
+.. total=x+y;   
+.. console.log(total); 
+.. };
+=> [Function]
+   addNumbers(5,5);
+10
+
+// Ex 42
+   askCareer = function(name){ 
+..   Career = prompt(name + "What do you want to be when you grow up?"); 
+..   };
+=> [Function]
+   askCareer(Lisa);
+ReferenceError: Lisa is not defined
+
+// Ex 43
+   askCareer("Lisa");
+   askCareer = function(name){ 
+..   Career = prompt(name + ", what do you want to be when you grow up?"); 
+..   };
+=> [Function]
+   askCareer("Lisa");
+   Career;
+=> 'a star'
+
+// Ex 44
+    age=10;
+=> 10
+   while(age<15){ 
+..   console.log("too young to go by yourself");age++; 
+..   };
+too young to go by yourself
+too young to go by yourself
+too young to go by yourself
+too young to go by yourself
+too young to go by yourself
+=> 14
+
+// Ex 45 Oops age has changed! See how that happened.
+   while(age<12){ 
+..   console.log("too young to go by yourself");age++; 
+..   };
+   
+// Ex 46   
+   age;
+=> 15
+   while(age<21){ 
+..   console.log("Wait until you're 21"); 
+..   age++;}; 
+..   if (age >=21){ 
+..     console.log("You're old enough"); 
+..     };
+Wait until you're 21
+Wait until you're 21
+Wait until you're 21
+Wait until you're 21
+Wait until you're 21
+Wait until you're 21
+You're old enough
+
+//Ex 47
+   while(age<25){ 
+..   console.log("Wait until you're 25.  You're only " + age); 
+..   age++; 
+..   };
+Wait until you're 25.  You're only 21
+Wait until you're 25.  You're only 22
+Wait until you're 25.  You're only 23
+Wait until you're 25.  You're only 24
+=> 24
+   
+//Ex 48
+   while(age<30){ 
+..   console.log("Wait until you're 25.  You're only " + age); 
+..   age++; 
+..   }; if (age==30){ 
+..     console.log("You're old enough"); 
+..     };
+Wait until you're 25.  You're only 25
+Wait until you're 25.  You're only 26
+Wait until you're 25.  You're only 27
+Wait until you're 25.  You're only 28
+Wait until you're 25.  You're only 29
+You're old enough
+
+// Ex 49
+fullName.split(" ");
+=> [ 'Lisa', 'Sileo' ]
+
+//Ex 50
+   fullName.toUpper();
+TypeError: fullName.toUpper is not a function
+   fullName.toUpperCase();
+=> 'LISA SILEO'
+    
+    
+
+   
