@@ -1,0 +1,78 @@
+#main{
+width:60%;
+margin-left:auto;
+margin-right:auto;
+margin-top:30px;
+background-color:#ffffff;
+padding:1em;
+opacity:0.80;
+/*filter:alpha(opacity=80);  For IE8 and earlier This makes page invalid CSS */
+position:relative;
+}
+
+#contract{
+font-weight:bold;
+}
+
+#changeBackground{
+width:100px;
+height:50px;
+background-color:#cce680;
+font-weight:bold;
+border:1px solid #cce680;
+border-radius:5%;
+box-shadow: 5px 5px 5px #888888;
+cursor:pointer;
+}
+
+#button{
+margin:0px 60px 20px 0px;
+float:right;
+position:absolute;
+bottom:0;
+right:0;
+}
+
+#footer{
+width:60%;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:20px;
+margin-top:20px;
+padding:1em;
+background-color:#ffffff;
+text-align:center;
+opacity:0.80;
+/*filter:alpha(opacity=80);  For IE8 and earlier This makes page invalid CSS */
+}
+
+#html5{
+display:inline;
+margin:10px;
+}
+
+#css{
+display:inline;
+margin:10px;
+}
+
+body{
+background-image:url(../images/backgroundimage.jpg);
+margin:auto;
+font-family: Georgia, serif;
+}
+
+span{
+font-family:Arial, Helvetica, sans-serif;
+font-weight:normal;
+}
+
+p{
+padding:.25em 2em .25em 2em;
+}
+
+h1{
+text-align:center;
+
+}
+
