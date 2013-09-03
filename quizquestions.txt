@@ -1,0 +1,79 @@
+//Question 1
+
+::Question::The { 
+ ~return # Incorrect; the correct answer is break. JavaScript for Web Developer, Chapter 3, Statements, page 73.
+ =break # Correct! JavaScript for Web Developer, Chapter 3, Statements, page 73.
+ ~continue # Incorrect; the correct answer is break. JavaScript for Web Developer, Chapter 3, Statements, page 73.
+ ~default # Incorrect; the correct answer is break. JavaScript for Web Developer, Chapter 3, Statements, page 73.
+ }
+statement exits a loop immediately, forcing execution to continue with the next statement after the loop.
+
+
+//Question 2
+
+::Question::Using the following code, what value is stored in the variable answer?\n
+var answer \= 43 + "45" {
+~88 # Incorrect The correct answer is 4345.
+~fortythree45 # Incorrect The correct answer is 4345.
+=4345 # Correct! JavaScript for Web Developers, Chapter 3, Operators, page 61.
+~43 # Incorrect The correct answer is 4345.
+}
+
+
+//Question 3
+
+::Question::Select the conventional method for including an external JavaScript file in an HTML document. {
+~<script type \= text/javascript src \= script.js</script> # Incorrect The correct answer is <script type \= "text/javascript" src \= "script.js"></script>. JavaScript for Web Developers, Chapter 2, The <script> Element, page 13.
+=<script type \= "text/javascript" src \= "script.js"></script> # Correct! JavaScript for Web Developers, Chapter 2, The <script> Element, page 13.
+~<script type \= "language/javascript" src \= "script.js"></script> # Incorrect The correct answer is <script type \= "text/javascript" src \= "script.js"></script>. JavaScript for Web Developers, Chapter 2, The <script> Element, page 13.
+~<script language \= "javascript" source \= "script.js"></script> # Incorrect The correct answer is <script type \= "text/javascript" src \= "script.js"></script>. JavaScript for Web Developers, Chapter 2, The <script> Element, page 13.
+}
+
+
+//Question 4
+
+::Question::In some browsers, using the {
+~hold # Incorrect The correct answer is defer. JavaScript for Web Developers, Chapter 2, The <script> Element, page 17.
+~wait # Incorrect The correct answer is defer. JavaScript for Web Developers, Chapter 2, The <script> Element, page 17.
+=defer # Correct! JavaScript for Web Developers, Chapter 2, The <script> Element, page 17.
+~async # Incorrect The correct answer is defer. JavaScript for Web Developers, Chapter 2, The <script> Element, page 17.
+}
+attribute of the <script> element prevents an external script file but from being executed until after the entire page has been loaded.
+
+
+//Question 5
+
+::Question::Using the following code, determine the value of count after the loop has finished executing?\n
+var count = 0\n
+for (var i \= 1; i<5; i++)\{\n
+	if (i + 6 < 10)\{\n
+		continue;\n
+	\}\n
+	count++;\n
+\} {
+
+~10 # Incorrect The correct answer is 1. JavaScript for Web Developer, Chapter 3, Statements, page 73.  
+~2 # Incorrect The correct answer is 1. JavaScript for Web Developer, Chapter 3, Statements, page 73.  
+~0 # Incorrect The correct answer is 1. JavaScript for Web Developer, Chapter 3, Statements, page 73.  
+=1 # Correct! JavaScript for Web Developer, Chapter 3, Statements, page 73.  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
