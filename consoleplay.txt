@@ -1,34 +1,34 @@
 // Lisa Sileo, 8/30/2013 - JavaScript Console Play
    
-   
-//Ex 1 
+// Functions and Variables   
+//Ex 1 Make a function
    dog = function(){ 
 ..   var name="Alex"; 
 ..   console.log(name); 
 ..   };
 => [Function]
 
-//Ex 2
+//Ex 2 Call a function
    dog();
 Alex
 
-//Ex 3
+//Ex 3 Access a local variable from outside the function - no work
    name;
 => ''
    console.log(name);
 
-//Ex 2 
+//Ex 2 Make a global variable inside function
    cat = function(){ 
 ..   name = "Cleo"; 
 ..   console.log(name); 
 ..   };
 => [Function]
 
-// Ex 4
+// Ex 4 Access a global variable from outside function - no problem
    name;
 => 'Cleo'
 
-//Ex 5      
+//Ex 5 Change value of a variable in a function     
      newCat="Scratchy";
 => 'Scratchy'
    changeName = function(){ 
@@ -40,8 +40,10 @@ Alex
    changeName();
    newCat;
 => 'Boy'
-  
-//Ex 6
+
+
+//Using typeof  
+//Ex 6 
    typeOf(name);
 ReferenceError: typeOf is not defined //I think it's typeOf in Java.
 
@@ -52,7 +54,9 @@ ReferenceError: typeOf is not defined //I think it's typeOf in Java.
 //Ex 8
    typeof(newCat);
 => 'function'
-   
+
+
+//Data Conversion to string using various methods
 //EX 9 
    var book = 1984;
    book;
@@ -84,6 +88,8 @@ ReferenceError: string is not defined
    book + 1;
 => 1985
 
+
+//Data Conversion to numbers using various methods
 //Ex 14 
    var song = "22";
    song
@@ -108,11 +114,15 @@ ReferenceError: string is not defined
    parseFloat(song);
 => 22
 
+
+//Adding using parseFloat
 //Ex 18
    var addDecimal = parseFloat(song).toFixed(2);
    addDecimal;
 => '22.00'
 
+
+//Modulus
 // Ex 19
    1 + 7 % 2
 => 2
@@ -133,6 +143,8 @@ ReferenceError: string is not defined
    7 % 7
 => 0
 
+
+//Using Math object
 // Ex 22
    Math.floor(6.45);
 => 6
@@ -149,23 +161,27 @@ ReferenceError: string is not defined
    Math.abs(6) + Math.abs(-6);
 => 12
 
-//Ex 26
+
+//Working with Arrays
+//Ex 26 Creating an array
    anArray = [6,7,8,12,20];
 => [ 6, 7, 8, 12, 20 ]
 
-// Ex 27
+
+//Attempts to find the largest number in an array
+// Ex 27  Doesn't work
      Math.max(anArray);
 => NaN
 
-// Ex 28
+// Ex 28  Doesn't work
      Array.max(anArray);
 TypeError: Array.max is not a function
 
-// Ex 29
+// Ex 29 Doesn't work
       anArray.max();
 TypeError: anArray.max is not a function
 
-// Ex 30 
+// Ex 30 Looping through an array to find the largest
   value = anArray[0];
 => 6
    for (i = 1; i < anArray.length; i++){ 
@@ -179,7 +195,7 @@ TypeError: anArray.max is not a function
 12
 20
 
-// Ex 31
+// Ex 31 Another attempt to find the largest
    for (i = 1; i < anArray.length; i++){ 
 ..   if (anArray[i]>value){ 
 ..     value=anArray[i]; 
@@ -191,19 +207,23 @@ TypeError: anArray.max is not a function
 20
 20
 
-// Ex 32
+// Ex 32  Largest number in array found by looping through and using a conditional statement
    for (i = 1; i < anArray.length; i++){ 
 ..   if (anArray[i]>value){ 
 ..     value=anArray[i]; 
 ..     }} 
 ..     console.log(value);
 20
-   
-// Ex 33
+
+
+//Using prompt   
+// Ex 33  
   var fullName = prompt("Enter your first and last name");
    fullName;
 => 'Lisa Sileo'
-   
+
+
+//String manipulation
 // Ex 34
    var name = "";
    for(i=0; i<fullName.length; i++){ 
@@ -256,6 +276,8 @@ SyntaxError: syntax error
   fullName.length
 => 10
 
+
+//
 // Ex 39
   var x=5;
    var y=3;
@@ -272,6 +294,8 @@ SyntaxError: syntax error
 ..     }
 The sum of the two numbers is less than 10
 
+
+//Functions with parameters
 // Ex 41   
    addNumbers = function(x,y){ 
 .. total=x+y;   
@@ -299,6 +323,8 @@ ReferenceError: Lisa is not defined
    Career;
 => 'a star'
 
+
+//While loop
 // Ex 44
     age=10;
 => 10
@@ -359,6 +385,8 @@ Wait until you're 25.  You're only 28
 Wait until you're 25.  You're only 29
 You're old enough
 
+
+//More string manipulation
 // Ex 49
 fullName.split(" ");
 => [ 'Lisa', 'Sileo' ]
